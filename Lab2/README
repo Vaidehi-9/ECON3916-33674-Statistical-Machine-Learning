@@ -1,0 +1,32 @@
+Lab 2: The Illusion of Growth & The Composition Effect
+Objective
+Built a Python pipeline to ingest live economic data from the Federal Reserve API (FRED) to analyze wage stagnation and correct for statistical biases in labor market indicators. This project investigates the "Money Illusion" phenomenon and uncovers how composition effects can create misleading narratives about economic progress.
+Tech Stack
+
+Python - Core programming language
+fredapi - Federal Reserve Economic Data API client
+pandas - Data manipulation and time series analysis
+matplotlib - Data visualization
+
+Methodology
+1. Real Wage Calculation
+Fetched nominal wage data (AHETPI - Average Hourly Earnings of Production and Nonsupervisory Employees) and Consumer Price Index (CPI) data from FRED to calculate inflation-adjusted real wages over a 50+ year period (1964-present).
+pythonReal Wage = (Nominal Wage / CPI) × 100
+2. Anomaly Detection
+Identified a significant statistical anomaly in 2020: an apparent sharp increase in average wages during the pandemic recession, contradicting economic theory that predicts wage stagnation during downturns.
+3. Composition Effect Correction
+To validate the hypothesis that the 2020 spike was a statistical artifact rather than genuine wage growth, I incorporated the Employment Cost Index (ECIWAG) from FRED. Unlike standard wage averages, the ECI controls for changes in industry and occupation mix, providing a composition-adjusted view of wage trends.
+Key Insight: By comparing standard wage measures against the ECI, I isolated the composition effect—the bias introduced when low-wage workers disproportionately exit the labor force, artificially inflating the average wage of remaining workers.
+Key Findings
+The Money Illusion (1964-Present)
+Visualizations reveal that while nominal wages have grown substantially over five decades, real purchasing power has remained largely stagnant. Workers earn more dollars but can purchase roughly the same basket of goods, demonstrating the critical importance of inflation adjustment in economic analysis.
+The Pandemic Paradox (2020)
+The most striking finding: the 2020 "wage boom" was not real.
+
+Standard Measures: Showed a sharp spike in average hourly earnings during 2020
+Composition-Adjusted ECI: Revealed stable, modest growth with no unusual spike
+
+Explanation: When restaurants, retail, and hospitality sectors shed millions of low-wage workers during pandemic lockdowns, the remaining workforce skewed toward higher-wage occupations. This compositional shift created an artificial increase in the average wage statistic, masking the reality that individual workers in the same jobs saw no unusual wage gains.
+This analysis demonstrates how naïve interpretation of aggregate statistics can lead to false conclusions about labor market strength. The apparent wage boom was a statistical artifact caused by compositional changes in the workforce, not an increase in underlying labor demand or worker bargaining power.
+Implications
+This project highlights the importance of using appropriate statistical controls when analyzing economic data. Policymakers and analysts who relied on standard wage metrics in 2020 may have significantly overestimated labor market health, potentially leading to misguided policy decisions.
