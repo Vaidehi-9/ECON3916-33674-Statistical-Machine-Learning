@@ -186,9 +186,9 @@ The divergence between official inflation measures and student-specific costs re
 
 ## Connect With Me
 
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: www.linkedin.com/in/vaidehi-pundeer-a02a91301
 - **Portfolio**: [Your Portfolio Website]
-- **Email**: your.email@example.com
+- **Email**: pundeer.v@northeastern.edu
 
 ---
 
