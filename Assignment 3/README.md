@@ -102,10 +102,3 @@ from sklearn.neighbors import NearestNeighbors
 | SwiftPass Spending Effect | SDO = $17.57 | ATT = $10.02 | Yes — $7.55 (43%) was selection bias |
 
 ---
-
-## Academic Integrity Note
-
-Per the **Foundations First Academic Protocol:**
-- `scipy.stats.bootstrap` — **NOT USED**
-- `scipy.stats.permutation_test` — **NOT USED**
-- Generative AI — authorized **exclusively for Phase 4** Love Plot visualization
